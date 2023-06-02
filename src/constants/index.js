@@ -27,6 +27,11 @@ import {
   dcc,
   kelhel,
   microverse,
+  golang,
+  sql,
+  python,
+  angular,
+  php,
 } from '../assets';
 
 export const navLinks = [
@@ -46,28 +51,13 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Frontend Developer',
+    title: 'Full Stack Developer',
     icon: frontend,
-  },
-  {
-    title: 'Backend Developer',
-    icon: backend,
-  },
-  {
-    title: 'UI/UX Design',
-    icon: ux,
-  },
-  {
-    title: 'Software Prototyping',
-    icon: prototyping,
-  },
+  }
 ];
 
 const technologies = [
-  {
-    name: 'HTML 5',
-    icon: html,
-  },
+
   {
     name: 'CSS 3',
     icon: css,
@@ -97,59 +87,119 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: 'Rails',
-    icon: rubyrails,
+    name: 'Golang',
+    icon: golang,
   },
   {
-    name: 'graphql',
+    name: 'GraphQL',
     icon: graphql,
   },
   {
-    name: 'postgresql',
+    name: 'PostgreSQL',
     icon: postgresql,
   },
   {
-    name: 'git',
+    name: 'Git',
     icon: git,
   },
   {
-    name: 'figma',
-    icon: figma,
-  },
-  {
-    name: 'docker',
+    name: 'Docker',
     icon: docker,
   },
+  {
+    name: 'SQL',
+    icon: sql,
+  },
+  {
+    name: 'AngularJS',
+    icon: angular,
+  },
+  {
+    name: 'Python',
+    icon: python,
+  },
+  {
+    name: 'HTML 5',
+    icon: html,
+  }
+  // {
+  //   name: 'AdonisJS',
+  //   icon: adonisjs,
+  // },
+  // {
+  //   name: 'MySQL',
+  //   icon: mysql,
+  // },
+  // {
+  //   name: 'MongoDB',
+  //   icon: mongodb,
+  // },
+  // {
+  //   name: 'APIs',
+  //   icon: api,
+  // },
+  // {
+  //   name: 'Bootstrap',
+  //   icon: bootstrap,
+  // },
+  // {
+  //   name: 'Jest',
+  //   icon: jest,
+  // },
+  // {
+  //   name: 'Symfony',
+  //   icon: symfony,
+  // },
+  // {
+  //   name: 'Doctrine',
+  //   icon: doctrine,
+  // },
+  // {
+  //   name: 'GitLab',
+  //   icon: gitlab,
+  // },
+  // {
+  //   name: 'Api REST',
+  //   icon: rest,
+  // },
+  // {
+  //   name: 'Express.js',
+  //   icon: expressjs,
+  // },
+  // {
+  //   name: 'Dbvear',
+  //   icon: dbvear,
+  // },
+  // {
+  //   name: 'ESLint',
+  //   icon: eslint,
+  // },
+  // {
+  //   name: 'Ubuntu',
+  //   icon: ubuntu,
+  // },
+  // {
+  //   name: 'ContextAPI',
+  //   icon: contextapi,
+  // },
+  // {
+  //   name: 'Sequelize',
+  //   icon: sequelize,
+  // },
+  // {
+  //   name: 'SocketIO',
+  //   icon: socketio,
+  // },
 ];
+
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
-    icon: coverhunt,
-    iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
-  },
-  {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
-    icon: microverse,
-    iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
-  },
-  {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
-    icon: kelhel,
-    iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
-  },
-  {
     title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
+    company_name: 'Goflux ',
     icon: dcc,
     iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'Novembro 2021 - Fevereiro 2023',
   },
 ];
 

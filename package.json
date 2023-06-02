@@ -1,5 +1,5 @@
 {
-  "name": "shaquille",
+  "name": "Lucas Godoi",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -17,6 +17,8 @@
     "maath": "^0.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-floating-whatsapp": "^5.0.8",
+    "react-icons": "^4.9.0",
     "react-router-dom": "^6.11.0",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",

@@ -49,6 +49,14 @@ import math from './projects/math-magicians.png';
 import movie from './projects/movie-metro.png';
 import nyeusi from './projects/nyeusi.png';
 import space from './projects/space-hub.png';
+import golang from './tech/golang.png'
+import sql from './tech/sql.png'
+import angular from './tech/angular.png'
+import python from './tech/python.png'
+import php from './tech/php.jpeg'
+
+
+
 
 export {
   bwmap,
@@ -96,4 +104,9 @@ export {
   dcc,
   kelhel,
   microverse,
+  golang,
+  sql,
+  angular,
+  python,
+  php
 };

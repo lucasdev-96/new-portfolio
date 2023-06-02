@@ -102,7 +102,7 @@ const Experience = () => {
               ease-in-out"
               onClick={() =>
                 window.open(
-                  'resume link', //paste the link to your resume here
+                  'file:///C:/Users/lucaz/Downloads/CV+Lucas+Godoi+novo.pdf', //paste the link to your resume here
                   '_blank'
                 )
               }

@@ -8,6 +8,8 @@ import {
   Tech,
   Projects,
 } from './components';
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
+import lucas from '../src/assets/personal/lucas.jpg'
 
 const App = () => {
   return (
@@ -38,9 +40,20 @@ const App = () => {
           </div>
         </div>
         <div className="relative z-0">
-          <Contact />
+ 
         </div>
       </div>
+      <FloatingWhatsApp 
+        phoneNumber="5519971341427"
+        accountName="Lucas"
+        allowEsc
+        darkMode
+        notification
+        chatMessage="Olá obrigado por entrar em contato no que posso ajudar?"
+        avatar={lucas}
+        placeholder="Escreva sua mensagem..."
+        statusMessage="Conte comigo!"
+        allowClickAway/>
     </BrowserRouter>
   );
 };
