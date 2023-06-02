@@ -1,8 +1,5 @@
 import {
   frontend,
-  backend,
-  ux,
-  prototyping,
   javascript,
   typescript,
   html,
@@ -12,28 +9,73 @@ import {
   tailwind,
   nodejs,
   git,
-  figma,
   docker,
   postgresql,
-  rubyrails,
   graphql,
   komikult,
-  leaderboard,
-  math,
-  movie,
-  nyeusi,
-  space,
-  coverhunt,
   dcc,
-  kelhel,
-  microverse,
   golang,
   sql,
   python,
   angular,
-  php,
+  air_plane,
+  people
 } from '../assets';
 
+
+
+export const Hero_ = {
+  greetings: "Hi, My Name is",
+}
+
+export const HeroBR = {
+  greetings: "Olá, Meu nome é",
+  }
+
+  export const About_ = {
+    introduction: 'Introduction',
+    overview: 'Overview',
+    about: `I am an enthusiastic Back End developer specialized in creating efficient and scalable solutions. 
+    I have experience in a growing variety of technologies for Full Stack development, including building robust APIs and systems. My skills include TypeScript, React, unit testing, PostgreSQL, JavaScript, PHP, HTML, CSS, SQL, MySQL, Windows, Linux,
+     GitHub, OOP, API, JSON, AngularJS, CRUD, Doctrine, algorithm design, object-oriented programming, automated testing, Azure, and code versioning with Git.
+    I also possess technical skills in other tools and technologies, such as Golang, Python, NoSQL, AdonisJS, MongoDB, Bootstrap, Jest,
+     Symfony, Data Structures, GitLab, Databases, REST, Software Architecture, Heroku, MVC, Redux, Express.js, Dbeaver, ESLint, ContextAPI, AWS, Sequelize, and SocketIO.`,
+    socialMedia: 'Social Media'
+  }
+
+  export const AboutBR = {
+    introduction: 'Introdução',
+    overview: 'Visão Geral',
+    about: `Sou um desenvolvedor entusiasmado de Back End, especializado em criar soluções eficientes e escaláveis. Tenho experiência em uma variedade crescente de tecnologias para o desenvolvimento Full Stack, incluindo a criação de APIs e sistemas robustos. Minhas habilidades incluem TypeScript, React, testes unitários, PostgreSQL, JavaScript, PHP, HTML, CSS, SQL, MySQL, Windows, Linux, GitHub, POO, API, JSON, AngularJS, CRUD, Doctrine, construção de algoritmos, orientação a objetos, testes automatizados, Azure e versionamento de código com Git. Também possuo habilidades técnicas em outras ferramentas e tecnologias, como Golang, Python, NoSQL, AdonisJS, MongoDB, Bootstrap, Jest, Symfony, Estrutura de Dados, GitLab, Banco de Dados, REST, Arquitetura de Software, Heroku, MVC, Redux, Express.js, Dbeaver, ESLint, ContextAPI, AWS, Sequelize e SocketIO.`,
+    socialMedia: 'Redes Sociais'
+
+    }
+
+  export const Skills_ = {
+    skils: 'My skills',
+    tech: 'Technologies'
+  }
+
+  export const SkillsBR = {
+    skills: 'Minhas habilidades',
+    tech: 'Tecnologias'
+  }
+
+  export const Project_ = {
+    title: 'Case Studies',
+    project: 'Projects',
+    info: `These projects demonstrate my expertise with practical examples of
+    some of my work, including brief descriptions and links to code
+    repositories and live demos. They showcase my ability to tackle
+    intricate challenges, adapt to various technologies, and efficiently
+    oversee projects.`
+  }
+
+  export const ProjectBR = {
+    title: 'Estudos de Caso',
+    project: 'Projetos',
+    info: `Esses projetos demonstram minha expertise com exemplos práticos do meu trabalho, incluindo descrições breves e links para repositórios de código e demonstrações ao vivo. Eles mostram minha habilidade em lidar com desafios complexos, adaptar-se a várias tecnologias e gerenciar projetos de forma eficiente.`
+    }
 
 export const navLinks = [
   {
@@ -45,7 +87,7 @@ export const navLinks = [
     title: 'Projects',
   },
   {
-    id: 'contact',
+    id: 'contact_',
     title: 'Contact',
   },
 ];
@@ -60,7 +102,7 @@ export const navLinksBr = [
     title: 'Projetos',
   },
   {
-    id: 'contact',
+    id: 'contact_',
     title: 'Contato',
   },
 ]
@@ -72,12 +114,7 @@ const services = [
   }
 ];
 
-const servicesBr = [
-  {
-    title: 'Desenvolvedor Full Stack',
-    icon: frontend,
-  }
-];
+
 
 const technologies = [
   {
@@ -225,7 +262,7 @@ const experiences = [
   },
 ];
 
-const experiencesBr = [
+export const experiencesBr = [
   {
     title: 'Desenvolvedor Full Stack',
     company_name: 'Goflux ',
@@ -238,116 +275,107 @@ const experiencesBr = [
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: 'Jotour',
+    description: 'Travel Agency Website.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'bootstrap',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'typescript',
         color: 'pink-text-gradient',
       },
     ],
-    image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    image: air_plane,
+    repo: 'https://github.com/lucasdev-96/josy-project',
+    demo: 'http://jotour.com.br/',
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
-    description:
-      'A leaderboard list app that displays scores submitted by different players.',
+    name: 'list-users',
+    description: 'User Information Table with Filtering by Countries and Genders.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'bootstrap',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'typescript',
         color: 'pink-text-gradient',
       },
     ],
-    image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
-  },
-  {
-    id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
-  },
-  {
-    id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
-  },
-  {
-    id: 'project-5',
-    name: 'Nyeusi Fest Site',
-    description:
-      'This is a demo concert website for a music festival called Nyeusi.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
+    image: people,
+    repo: 'https://github.com/lucasdev-96/list-users',
+    demo: 'https://list-users-sable.vercel.app/',
   },
 ];
+
+export const projectsBr = [
+  {
+    id: 'project-1',
+    name: 'Jotour',
+    description: 'Site de agência de viagens.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'bootstrap',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: air_plane,
+    repo: 'https://github.com/lucasdev-96/josy-project',
+    demo: 'http://jotour.com.br/',
+  },
+  {
+    id: 'project-2',
+    name: 'list-users',
+    description: 'Tabela listando os usuários e suas informações, com filtro por países e gêneros.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'bootstrap',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: people,
+    repo: 'https://github.com/lucasdev-96/list-users',
+    demo: 'https://list-users-sable.vercel.app/',
+  },
+];
+
+export const experience = {
+  title: `What I've done so far`,
+  subtitle: `Work Experience.`,
+  resume: 'MY RESUME'
+}
+
+export const experienceBr = {
+  title: "O que eu já fiz até agora",
+  subtitle:  "Experiência de trabalho",
+  resume: 'CURRÍCULO'
+}
 
 export { services, technologies, experiences, projects };

@@ -5,10 +5,15 @@ import {
 import { motion } from 'framer-motion';
 import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
-import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { download, downloadHover, resume } from '../assets';
 import { textVariant } from '../utils/motion';
+import { ResumeContext } from '../Context/translateContext';
+import { useContext, useEffect, useState } from 'react';
+import {experience, experienceBr} from '../constants/index'
+import {experiences, experiencesBr} from '../constants/index'
+import cv from '../assets/personal/cv.pdf'
+
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
@@ -52,20 +57,31 @@ const ExperienceCard = ({ experience }) => (
 );
 
 const Experience = () => {
+  const { language } = useContext(ResumeContext);
+  const [experienceInfo, setexperienceInfo] = useState(experiencesBr);
+
+  useEffect(() => {
+    if (language === 'pt') {
+      setexperienceInfo(experiencesBr)
+    } else {
+      setexperienceInfo(experiences)
+    }
+  }, [language])
+
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} sm:pl-16 pl-[2rem]`}>
-          What I've done so far
+        {language === 'pt' ? experienceBr.title : experience.title}
         </p>
         <h2 className={`${styles.sectionHeadText} sm:pl-16 pl-[2rem]`}>
-          Work Experience.
+        {language === 'pt' ? experienceBr.subtitle : experience.subtitle}
         </h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline className="vertical-timeline-custom-line">
-          {experiences.map((experience, index) => (
+          {experienceInfo.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}
           <VerticalTimelineElement
@@ -91,7 +107,7 @@ const Experience = () => {
                 />
               </div>
             }>
-            <button
+            <a
               className="live-demo flex justify-between 
               sm:text-[18px] text-[14px] text-timberWolf 
               font-bold font-beckman items-center py-5 pl-3 pr-3 
@@ -100,12 +116,8 @@ const Experience = () => {
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
               hover:text-eerieBlack transition duration-[0.2s] 
               ease-in-out"
-              onClick={() =>
-                window.open(
-                  'file:///C:/Users/lucaz/Downloads/CV+Lucas+Godoi+novo.pdf', //paste the link to your resume here
-                  '_blank'
-                )
-              }
+             download
+             href={cv}
               onMouseOver={() => {
                 document
                   .querySelector('.download-btn')
@@ -116,14 +128,14 @@ const Experience = () => {
                   .querySelector('.download-btn')
                   .setAttribute('src', download);
               }}>
-              MY RESUME
+              {language === 'pt' ? experienceBr.resume : experience.resume}
               <img
                 src={download}
                 alt="download"
                 className="download-btn sm:w-[26px] sm:h-[26px] 
                 w-[23px] h-[23px] object-contain"
               />
-            </button>
+            </a>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>

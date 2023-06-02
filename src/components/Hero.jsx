@@ -1,12 +1,21 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import { styles } from '../styles';
-import { navLinks } from '../constants';
 import { shaq, bwmap, worldmap } from '../assets';
-import { useTranslation } from 'react-i18next';
+import {Hero_, HeroBR} from '../constants/index'
+import { ResumeContext } from '../Context/translateContext';
+import { useContext, useEffect, useState } from 'react';
 
 const Hero = () => {
-  const { i18n, t } = useTranslation();
+  const [links, setLinks] = useState(Hero_.about);
+  const { language } = useContext(ResumeContext);
+  useEffect(() => {
+    if (language === 'pt') {
+      setLinks(HeroBR.about)
+    } else {
+      setLinks(Hero_.about)
+    }
+  }, [language])
+
   return (
     <>
       <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
@@ -16,7 +25,7 @@ const Hero = () => {
           className="w-full h-full sm:block hidden object-cover"
         />
       </div>
-      <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
+      <div className="absolute top-0 left-0 z-0 h-[100vh]">
         <img
           src={worldmap}
           alt="world map"
@@ -39,7 +48,7 @@ const Hero = () => {
           <div>
             <h1
               className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}>
-              {t('oi')}{' '}
+              {language === 'pt' ? HeroBR.greetings : Hero_.greetings}{' '}
               <span
                 className="sm:text-battleGray sm:text-[90px] 
                 text-eerieBlack text-[50px] font-mova
@@ -47,16 +56,11 @@ const Hero = () => {
                 Lucas Godoi
               </span>
             </h1>
-            <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              Lorem ipsum dolor sit amet. <br className="sm:block hidden" />
-              consectetur adipisicing elit deleniti, voluptas.
-            </p>
           </div>
           <div
             className="w-screen flex flex-col items-start 
             justify-center sm:-ml-[3rem] xxs:mt-4"></div>
 
-          <div></div>
         </div>
 
         <div
@@ -82,12 +86,12 @@ const Hero = () => {
           </a>
         </div>
 
-        {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
+  
         <div>
           <img
             className="absolute bottom-0 ml-[50vw] 
             lg:ml-[75vw] md:ml-[60vw] xmd:ml-[60vw] 2xl:ml-[83vw]
-            sm:h-[90vh] md:h-[70vh] xl:h-[80vh] xs1:max-w-[50%] "
+            sm:h-[90vh] md:h-[70vh] xl:h-[65vh] xs1:max-w-[50%] "
             src={shaq}
             alt="shaquille"
           />

@@ -8,11 +8,12 @@ import {
   Tech,
   Projects,
 } from './components';
-import { FloatingWhatsApp } from 'react-floating-whatsapp';
-import lucas from '../src/assets/personal/lucas.jpg'
-import { ResumeContextProvider } from './Context/translateContext';
+import { ResumeContext, ResumeContextProvider } from './Context/translateContext';
+import { useContext } from 'react';
 
 const App = () => {
+  const { language } = useContext(ResumeContext);
+  console.log(language)
   return (
     <ResumeContextProvider>
     <BrowserRouter>
@@ -45,17 +46,7 @@ const App = () => {
  
         </div>
       </div>
-      <FloatingWhatsApp 
-        phoneNumber="5519971341427"
-        accountName="Lucas"
-        allowEsc
-        darkMode
-        notification
-        chatMessage="Olá obrigado por entrar em contato no que posso ajudar?"
-        avatar={lucas}
-        placeholder="Escreva sua mensagem..."
-        statusMessage="Conte comigo!"
-        allowClickAway/>
+ 
     </BrowserRouter>
     </ResumeContextProvider>
   );

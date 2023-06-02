@@ -54,11 +54,14 @@ import sql from './tech/sql.png'
 import angular from './tech/angular.png'
 import python from './tech/python.png'
 import php from './tech/php.jpeg'
+import air_plane from './projects/air_plane.jpg'
+import people from './projects/people.jpg'
 
 
 
 
 export {
+  people,
   bwmap,
   nairobi,
   whiteabstract,
@@ -108,5 +111,6 @@ export {
   sql,
   angular,
   python,
-  php
+  php,
+  air_plane
 };

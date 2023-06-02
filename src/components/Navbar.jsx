@@ -31,7 +31,6 @@ const Navbar = () => {
 
   const buttonsLanguage = () => {
     return languages.map((language, index) => {
-      const marginLeftIcon = index === 1 ? '10px' : '';
       const opacity = i18n.resolvedLanguage === language.name ? '0.4' : '';
       return (
         <>
@@ -41,8 +40,8 @@ const Navbar = () => {
               border: 'none',
               background: 'none',
               width: '50px',
-              marginLeft: marginLeftIcon
             }}
+            className='xl:ml-8'
             onClick={() => {
               // i18n.changeLanguage(language.name)
               setLanguage(language.name);
@@ -110,23 +109,24 @@ const Navbar = () => {
                 />
               </div>
               <ul
-                className="list-none flex flex-col -gap-[1rem] 
-                items-start justify-end mt-[10rem] -ml-[35px]">
+                className="list-none flex flex-col items-center -gap-[5rem] 
+                items-start justify-center mt-[2rem] -ml-[5px]">
                 {navLinks.map((nav) => (
                   <li
                     id={nav.id}
                     key={nav.id}
                     className={`${
                       active === nav.title ? 'text-french' : 'text-eerieBlack'
-                    } text-[88px] font-bold font-arenq 
+                    } text-[20px] font-bold font-arenq 
                       uppercase tracking-[1px] cursor-pointer`}
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(nav.title);
                     }}>
-                    <a href={`#${nav.id}`}>{nav.title}</a>
+                    <a href={`#${nav.id}`} className='text-[50px]'>{nav.title}</a>
                   </li>
                 ))}
+                {buttonsLanguage()}
               </ul>
             </div>
           ) : (
