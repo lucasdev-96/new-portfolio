@@ -144,7 +144,7 @@ const Experience = () => {
         </VerticalTimeline>
       </div>
       <FloatingWhatsApp 
-        phoneNumber="5519971341427"
+        phoneNumber="5519999225291"
         accountName="Lucas"
         allowEsc
         darkMode
