@@ -10,9 +10,11 @@ import {
 } from './components';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import lucas from '../src/assets/personal/lucas.jpg'
+import { ResumeContextProvider } from './Context/translateContext';
 
 const App = () => {
   return (
+    <ResumeContextProvider>
     <BrowserRouter>
       <div className="relative z-0">
         <div>
@@ -55,6 +57,7 @@ const App = () => {
         statusMessage="Conte comigo!"
         allowClickAway/>
     </BrowserRouter>
+    </ResumeContextProvider>
   );
 };
 

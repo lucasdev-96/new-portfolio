@@ -1,12 +1,60 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
-import { navLinks } from '../constants';
+import { navLinks, navLinksBr } from '../constants';
 import { close, menu, logo, logotext } from '../assets';
+import { useTranslation } from 'react-i18next';
+import brazilIcon from '../assets/icons/logo-Brasil.png'
+import euaIcon from '../assets/icons/us.png'
+import { ResumeContext } from '../Context/translateContext';
+
 
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
+  const [links, setLinks] = useState(navLinks);
+
+  const { i18n, t } = useTranslation();
+  const languages = [
+    { src: brazilIcon, name: 'pt' },
+    { src: euaIcon, name: 'en' }
+  ];
+  const { setLanguage, language } = useContext(ResumeContext);
+
+  useEffect(() => {
+    if (language === 'pt') {
+      setLinks(navLinksBr)
+    } else {
+      setLinks(navLinks)
+    }
+  }, [language])
+
+  const buttonsLanguage = () => {
+    return languages.map((language, index) => {
+      const marginLeftIcon = index === 1 ? '10px' : '';
+      const opacity = i18n.resolvedLanguage === language.name ? '0.4' : '';
+      return (
+        <>
+          <button
+            key={language.name}
+            style={{
+              border: 'none',
+              background: 'none',
+              width: '50px',
+              marginLeft: marginLeftIcon
+            }}
+            onClick={() => {
+              // i18n.changeLanguage(language.name)
+              setLanguage(language.name);
+            }}
+            disabled={i18n.resolvedLanguage === language.name}
+            type="submit">
+            <img style={{ width: '50px', opacity: opacity }} src={language.src} />
+          </button>
+        </>
+      );
+    })
+  }
 
   return (
     <nav
@@ -30,7 +78,7 @@ const Navbar = () => {
           Otherwise delete this if you don't need it. */}
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
-          {navLinks.map((nav) => (
+          {links.map((nav) => (
             <li
               key={nav.id}
               className={`${
@@ -42,7 +90,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-
+        <div className='hidden sm:block'>
+        {buttonsLanguage()}
+        </div>
         {/* mobile */}
         <div className="sm:hidden flex flex-1 w-screen justify-end items-center">
           {toggle ? (

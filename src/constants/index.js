@@ -34,6 +34,7 @@ import {
   php,
 } from '../assets';
 
+
 export const navLinks = [
   {
     id: 'about',
@@ -49,6 +50,21 @@ export const navLinks = [
   },
 ];
 
+export const navLinksBr = [
+  {
+    id: 'about',
+    title: 'Sobre',
+  },
+  {
+    id: 'projects',
+    title: 'Projetos',
+  },
+  {
+    id: 'contact',
+    title: 'Contato',
+  },
+]
+
 const services = [
   {
     title: 'Full Stack Developer',
@@ -56,8 +72,14 @@ const services = [
   }
 ];
 
-const technologies = [
+const servicesBr = [
+  {
+    title: 'Desenvolvedor Full Stack',
+    icon: frontend,
+  }
+];
 
+const technologies = [
   {
     name: 'CSS 3',
     icon: css,
@@ -196,6 +218,16 @@ const technologies = [
 const experiences = [
   {
     title: 'Full Stack Developer',
+    company_name: 'Goflux ',
+    icon: dcc,
+    iconBg: '#333333',
+    date: 'November 2021 - February 2023',
+  },
+];
+
+const experiencesBr = [
+  {
+    title: 'Desenvolvedor Full Stack',
     company_name: 'Goflux ',
     icon: dcc,
     iconBg: '#333333',

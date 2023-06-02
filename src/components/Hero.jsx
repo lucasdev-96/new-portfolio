@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { shaq, bwmap, worldmap } from '../assets';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const { i18n, t } = useTranslation();
   return (
     <>
       <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
@@ -37,7 +39,7 @@ const Hero = () => {
           <div>
             <h1
               className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}>
-              Hi, I'm{' '}
+              {t('oi')}{' '}
               <span
                 className="sm:text-battleGray sm:text-[90px] 
                 text-eerieBlack text-[50px] font-mova
