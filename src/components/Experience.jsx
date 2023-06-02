@@ -12,7 +12,9 @@ import { ResumeContext } from '../Context/translateContext';
 import { useContext, useEffect, useState } from 'react';
 import {experience, experienceBr} from '../constants/index'
 import {experiences, experiencesBr} from '../constants/index'
-import cv from '../assets/personal/cv.pdf'
+import cvPt from '../assets/personal/cv-pt.pdf'
+import cvEn from '../assets/personal/cv-en.pdf'
+
 
 
 const ExperienceCard = ({ experience }) => (
@@ -117,7 +119,7 @@ const Experience = () => {
               hover:text-eerieBlack transition duration-[0.2s] 
               ease-in-out"
              download
-             href={cv}
+             href={language === 'pt' ? cvPt :cvEn}
               onMouseOver={() => {
                 document
                   .querySelector('.download-btn')
