@@ -41,6 +41,7 @@ const Navbar = () => {
               background: 'none',
               width: '50px',
             }}
+            id="buttonlan"
             className='xl:ml-8'
             onClick={() => {
               // i18n.changeLanguage(language.name)
@@ -68,13 +69,10 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}>
           <img
-            src={logo} // your logo comes here
+            src={logo} 
             alt="logo"
             className="sm:w-[50px] sm:h-[50px] w-[45px] h-[45px] object-contain"
           />
-
-          {/* if you have text you want besides your logo it comes here.
-          Otherwise delete this if you don't need it. */}
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
           {links.map((nav) => (
