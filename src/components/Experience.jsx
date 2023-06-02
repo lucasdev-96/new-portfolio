@@ -14,6 +14,8 @@ import {experience, experienceBr} from '../constants/index'
 import {experiences, experiencesBr} from '../constants/index'
 import cvPt from '../assets/personal/cv-pt.pdf'
 import cvEn from '../assets/personal/cv-en.pdf'
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
+import foto from '../assets/personal/x.jpg'
 
 
 
@@ -141,6 +143,17 @@ const Experience = () => {
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
+      <FloatingWhatsApp 
+        phoneNumber="5519971341427"
+        accountName="Lucas"
+        allowEsc
+        darkMode
+        notification
+        chatMessage={`${language === 'pt' ? 'Olá obrigado por entrar em contato no que posso ajudar?' : 'Hello, thank you for reaching out. How can I assist you?'}`}
+        avatar={foto}
+        placeholder={`${language === 'pt' ? 'Escreva sua mensagem...' : 'Type your message...'}`}
+        statusMessage={`${language === 'pt' ? 'Conte comigo!' : 'Count on me!'}`}
+        allowClickAway/>
     </>
   );
 };
