@@ -56,6 +56,21 @@ import python from './tech/python.png'
 import php from './tech/php.jpeg'
 import air_plane from './projects/air_plane.jpg'
 import people from './projects/people.jpg'
+import adonis from './tech/adonis.png'
+import boostrap from './tech/boostrap.jpeg'
+import doctrine from './tech/doctrine.png'
+import jest from './tech/jest.png'
+import mongodb from './tech/mongodb.png'
+import mysql from './tech/mysql.png'
+import symfony from './tech/symfony.png'
+import api from './tech/APIs-in-Postman-e1616786230943.png'
+
+
+
+
+
+
+
 
 
 
@@ -112,5 +127,13 @@ export {
   angular,
   python,
   php,
-  air_plane
+  air_plane,
+  adonis,
+  boostrap,
+  doctrine, 
+  jest, 
+  mongodb,
+  mysql, 
+  symfony,
+  api
 };

@@ -3,7 +3,7 @@ import { BallCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { technologies } from '../constants';
 import { styles } from '../styles';
-import { textVariant } from '../utils/motion';
+import { fadeIn, textVariant } from '../utils/motion';
 import { ResumeContext } from '../Context/translateContext';
 import { useContext } from 'react';
 import {SkillsBR, Skills_} from '../constants/index'
@@ -22,10 +22,10 @@ const Tech = () => {
 
       <div className="flex flex-wrap justify-center gap-10 mt-14">
         {technologies.map((technology) => (
-          <div className="w-28 h-28 text-center" key={technology.name}>
+          <motion.div variants={textVariant()} className="w-28 h-28 text-center" key={technology.name}>
             <BallCanvas icon={technology.icon} />
             <p>{technology.name}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
       <FloatingWhatsApp 

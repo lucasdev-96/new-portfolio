@@ -19,7 +19,16 @@ import {
   python,
   angular,
   air_plane,
-  people
+  people,
+  figma,
+  mysql,
+  mongodb,
+  boostrap,
+  jest,
+  symfony,
+  doctrine,
+  adonis,
+  api
 } from '../assets';
 
 
@@ -181,74 +190,38 @@ const technologies = [
     name: 'HTML 5',
     icon: html,
   },
-  // {
-  //   name: 'AdonisJS',
-  //   icon: adonisjs,
-  // },
-  // {
-  //   name: 'MySQL',
-  //   icon: mysql,
-  // },
-  // {
-  //   name: 'MongoDB',
-  //   icon: mongodb,
-  // },
-  // {
-  //   name: 'APIs',
-  //   icon: api,
-  // },
-  // {
-  //   name: 'Bootstrap',
-  //   icon: bootstrap,
-  // },
-  // {
-  //   name: 'Jest',
-  //   icon: jest,
-  // },
-  // {
-  //   name: 'Symfony',
-  //   icon: symfony,
-  // },
-  // {
-  //   name: 'Doctrine',
-  //   icon: doctrine,
-  // },
-  // {
-  //   name: 'GitLab',
-  //   icon: gitlab,
-  // },
-  // {
-  //   name: 'Api REST',
-  //   icon: rest,
-  // },
-  // {
-  //   name: 'Express.js',
-  //   icon: expressjs,
-  // },
-  // {
-  //   name: 'Dbvear',
-  //   icon: dbvear,
-  // },
-  // {
-  //   name: 'ESLint',
-  //   icon: eslint,
-  // },
-  // {
-  //   name: 'Ubuntu',
-  //   icon: ubuntu,
-  // },
-  // {
-  //   name: 'ContextAPI',
-  //   icon: contextapi,
-  // },
-  // {
-  //   name: 'Sequelize',
-  //   icon: sequelize,
-  // },
-  // {
-  //   name: 'SocketIO',
-  //   icon: socketio,
-  // },
+  {
+    name: 'MySQL',
+    icon: mysql,
+  },
+  {
+    name: 'MongoDB',
+    icon: mongodb,
+  },
+  {
+    name: 'APIs',
+    icon: api,
+  },
+  {
+    name: 'Boostrap',
+    icon: boostrap,
+  },
+  {
+    name: 'Jest',
+    icon: jest,
+  },
+  {
+    name: 'Symfony',
+    icon: symfony,
+  },
+  {
+    name: 'Doctrine',
+    icon: doctrine,
+  },
+  {
+    name: 'Adonis Js',
+    icon: adonis,
+  },
 ];
 
 
