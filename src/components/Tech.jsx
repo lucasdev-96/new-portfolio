@@ -8,7 +8,7 @@ import { ResumeContext } from '../Context/translateContext';
 import { useContext } from 'react';
 import {SkillsBR, Skills_} from '../constants/index'
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
-// import lucas from '../src/assets/personal/lucas.jpg'
+import foto from '../assets/personal/x.jpg'
 
 const Tech = () => {
   const { language } = useContext(ResumeContext);
@@ -34,7 +34,7 @@ const Tech = () => {
         darkMode
         notification
         chatMessage={`${language === 'pt' ? 'Olá obrigado por entrar em contato no que posso ajudar?' : 'Hello, thank you for reaching out. How can I assist you?'}`}
-        avatar={'../src/assets/personal/x.jpg'}
+        avatar={foto}
         placeholder={`${language === 'pt' ? 'Escreva sua mensagem...' : 'Type your message...'}`}
         statusMessage={`${language === 'pt' ? 'Conte comigo!' : 'Count on me!'}`}
         allowClickAway/>
