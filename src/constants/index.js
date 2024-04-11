@@ -44,18 +44,14 @@ export const HeroBR = {
   export const About_ = {
     introduction: 'Introduction',
     overview: 'Overview',
-    about: `I am an enthusiastic Back End developer specialized in creating efficient and scalable solutions. 
-    I have experience in a growing variety of technologies for Full Stack development, including building robust APIs and systems. My skills include TypeScript, React, unit testing, PostgreSQL, JavaScript, PHP, HTML, CSS, SQL, MySQL, Windows, Linux,
-     GitHub, OOP, API, JSON, AngularJS, CRUD, Doctrine, algorithm design, object-oriented programming, automated testing, Azure, and code versioning with Git.
-    I also possess technical skills in other tools and technologies, such as Golang, Python, NoSQL, AdonisJS, MongoDB, Bootstrap, Jest,
-     Symfony, Data Structures, GitLab, Databases, REST, Software Architecture, Heroku, MVC, Redux, Express.js, Dbeaver, ESLint, ContextAPI, AWS, Sequelize, and SocketIO.`,
+    about: `Full Stack Software Developer with 3 years of experience in the field, specialized in creating innovative and scalable solutions. I have solid skills in both front-end and back-end development, with advanced knowledge in Node.js and PHP for the back-end, and AngularJS and React for the front-end. I have experience in SQL and NoSQL databases, in addition to improving my skills in Golang. I also have knowledge in messaging using RabbitMQ and Redis, and I am proficient in unit testing and Docker. Committed to achieving exceptional results, I constantly seek to collaborate effectively in multidisciplinary teams. I am open to new opportunities that provide me with challenges and promote my professional growth.`,
     socialMedia: 'Social Media'
   }
 
   export const AboutBR = {
     introduction: 'Introdução',
     overview: 'Visão Geral',
-    about: `Sou um desenvolvedor entusiasmado de Back End, especializado em criar soluções eficientes e escaláveis. Tenho experiência em uma variedade crescente de tecnologias para o desenvolvimento Full Stack, incluindo a criação de APIs e sistemas robustos. Minhas habilidades incluem TypeScript, React, testes unitários, PostgreSQL, JavaScript, PHP, HTML, CSS, SQL, MySQL, Windows, Linux, GitHub, POO, API, JSON, AngularJS, CRUD, Doctrine, construção de algoritmos, orientação a objetos, testes automatizados, Azure e versionamento de código com Git. Também possuo habilidades técnicas em outras ferramentas e tecnologias, como Golang, Python, NoSQL, AdonisJS, MongoDB, Bootstrap, Jest, Symfony, Estrutura de Dados, GitLab, Banco de Dados, REST, Arquitetura de Software, Heroku, MVC, Redux, Express.js, Dbeaver, ESLint, ContextAPI, AWS, Sequelize e SocketIO.`,
+    about: `Desenvolvedor de Software Full Stack com 3 anos de experiência na área, especializado em criar soluções inovadoras e escaláveis. Possuo habilidades sólidas tanto em desenvolvimento front-end quanto back-end, com conhecimentos avançados em Node.js e PHP para o back-end, e AngularJS e React para o front-end. Tenho experiência em bancos de dados SQL e NoSQL, além de estar me aprimorando em Golang. Também possuo conhecimento em mensageria utilizando RabbitMQ e Redis, e sou proficient em testes unitários e Docker. Comprometido em alcançar resultados excepcionais, busco constantemente colaborar efetivamente em equipes multidisciplinares. Estou aberto a novas oportunidades que me proporcionem desafios e promovam meu crescimento profissional.`,
     socialMedia: 'Redes Sociais'
 
     }
@@ -241,7 +237,7 @@ export const experiencesBr = [
     company_name: 'Goflux ',
     icon: dcc,
     iconBg: '#333333',
-    date: 'Novembro 2021 - Fevereiro 2023',
+    date: 'Novembro 2021 - Abril 2024',
   },
 ];
 
